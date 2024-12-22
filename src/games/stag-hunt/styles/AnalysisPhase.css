@@ -1,0 +1,14 @@
+.analysis-phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.analysis-phase p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+

@@ -11,15 +11,71 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as TheFairFeastImport } from './routes/the-fair-feast'
+import { Route as StagHuntImport } from './routes/stag-hunt'
+import { Route as RPScLSpImport } from './routes/r-p-sc-l-sp'
+import { Route as PrisonersNetwrokImport } from './routes/prisoners-netwrok'
+import { Route as PrisonersDilemmaImport } from './routes/prisoners-dilemma'
+import { Route as LearnImport } from './routes/learn'
 import { Route as GamesImport } from './routes/games'
+import { Route as CommunityChestImport } from './routes/community-chest'
+import { Route as ChallengeImport } from './routes/challenge'
 import { Route as AboutImport } from './routes/about'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
+const TheFairFeastRoute = TheFairFeastImport.update({
+  id: '/the-fair-feast',
+  path: '/the-fair-feast',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const StagHuntRoute = StagHuntImport.update({
+  id: '/stag-hunt',
+  path: '/stag-hunt',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const RPScLSpRoute = RPScLSpImport.update({
+  id: '/r-p-sc-l-sp',
+  path: '/r-p-sc-l-sp',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const PrisonersNetwrokRoute = PrisonersNetwrokImport.update({
+  id: '/prisoners-netwrok',
+  path: '/prisoners-netwrok',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const PrisonersDilemmaRoute = PrisonersDilemmaImport.update({
+  id: '/prisoners-dilemma',
+  path: '/prisoners-dilemma',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const LearnRoute = LearnImport.update({
+  id: '/learn',
+  path: '/learn',
+  getParentRoute: () => rootRoute,
+} as any)
+
 const GamesRoute = GamesImport.update({
   id: '/games',
   path: '/games',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const CommunityChestRoute = CommunityChestImport.update({
+  id: '/community-chest',
+  path: '/community-chest',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ChallengeRoute = ChallengeImport.update({
+  id: '/challenge',
+  path: '/challenge',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -53,11 +109,67 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutImport
       parentRoute: typeof rootRoute
     }
+    '/challenge': {
+      id: '/challenge'
+      path: '/challenge'
+      fullPath: '/challenge'
+      preLoaderRoute: typeof ChallengeImport
+      parentRoute: typeof rootRoute
+    }
+    '/community-chest': {
+      id: '/community-chest'
+      path: '/community-chest'
+      fullPath: '/community-chest'
+      preLoaderRoute: typeof CommunityChestImport
+      parentRoute: typeof rootRoute
+    }
     '/games': {
       id: '/games'
       path: '/games'
       fullPath: '/games'
       preLoaderRoute: typeof GamesImport
+      parentRoute: typeof rootRoute
+    }
+    '/learn': {
+      id: '/learn'
+      path: '/learn'
+      fullPath: '/learn'
+      preLoaderRoute: typeof LearnImport
+      parentRoute: typeof rootRoute
+    }
+    '/prisoners-dilemma': {
+      id: '/prisoners-dilemma'
+      path: '/prisoners-dilemma'
+      fullPath: '/prisoners-dilemma'
+      preLoaderRoute: typeof PrisonersDilemmaImport
+      parentRoute: typeof rootRoute
+    }
+    '/prisoners-netwrok': {
+      id: '/prisoners-netwrok'
+      path: '/prisoners-netwrok'
+      fullPath: '/prisoners-netwrok'
+      preLoaderRoute: typeof PrisonersNetwrokImport
+      parentRoute: typeof rootRoute
+    }
+    '/r-p-sc-l-sp': {
+      id: '/r-p-sc-l-sp'
+      path: '/r-p-sc-l-sp'
+      fullPath: '/r-p-sc-l-sp'
+      preLoaderRoute: typeof RPScLSpImport
+      parentRoute: typeof rootRoute
+    }
+    '/stag-hunt': {
+      id: '/stag-hunt'
+      path: '/stag-hunt'
+      fullPath: '/stag-hunt'
+      preLoaderRoute: typeof StagHuntImport
+      parentRoute: typeof rootRoute
+    }
+    '/the-fair-feast': {
+      id: '/the-fair-feast'
+      path: '/the-fair-feast'
+      fullPath: '/the-fair-feast'
+      preLoaderRoute: typeof TheFairFeastImport
       parentRoute: typeof rootRoute
     }
   }
@@ -68,41 +180,115 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/challenge': typeof ChallengeRoute
+  '/community-chest': typeof CommunityChestRoute
   '/games': typeof GamesRoute
+  '/learn': typeof LearnRoute
+  '/prisoners-dilemma': typeof PrisonersDilemmaRoute
+  '/prisoners-netwrok': typeof PrisonersNetwrokRoute
+  '/r-p-sc-l-sp': typeof RPScLSpRoute
+  '/stag-hunt': typeof StagHuntRoute
+  '/the-fair-feast': typeof TheFairFeastRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/challenge': typeof ChallengeRoute
+  '/community-chest': typeof CommunityChestRoute
   '/games': typeof GamesRoute
+  '/learn': typeof LearnRoute
+  '/prisoners-dilemma': typeof PrisonersDilemmaRoute
+  '/prisoners-netwrok': typeof PrisonersNetwrokRoute
+  '/r-p-sc-l-sp': typeof RPScLSpRoute
+  '/stag-hunt': typeof StagHuntRoute
+  '/the-fair-feast': typeof TheFairFeastRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/challenge': typeof ChallengeRoute
+  '/community-chest': typeof CommunityChestRoute
   '/games': typeof GamesRoute
+  '/learn': typeof LearnRoute
+  '/prisoners-dilemma': typeof PrisonersDilemmaRoute
+  '/prisoners-netwrok': typeof PrisonersNetwrokRoute
+  '/r-p-sc-l-sp': typeof RPScLSpRoute
+  '/stag-hunt': typeof StagHuntRoute
+  '/the-fair-feast': typeof TheFairFeastRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/games'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/challenge'
+    | '/community-chest'
+    | '/games'
+    | '/learn'
+    | '/prisoners-dilemma'
+    | '/prisoners-netwrok'
+    | '/r-p-sc-l-sp'
+    | '/stag-hunt'
+    | '/the-fair-feast'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/games'
-  id: '__root__' | '/' | '/about' | '/games'
+  to:
+    | '/'
+    | '/about'
+    | '/challenge'
+    | '/community-chest'
+    | '/games'
+    | '/learn'
+    | '/prisoners-dilemma'
+    | '/prisoners-netwrok'
+    | '/r-p-sc-l-sp'
+    | '/stag-hunt'
+    | '/the-fair-feast'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/challenge'
+    | '/community-chest'
+    | '/games'
+    | '/learn'
+    | '/prisoners-dilemma'
+    | '/prisoners-netwrok'
+    | '/r-p-sc-l-sp'
+    | '/stag-hunt'
+    | '/the-fair-feast'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  ChallengeRoute: typeof ChallengeRoute
+  CommunityChestRoute: typeof CommunityChestRoute
   GamesRoute: typeof GamesRoute
+  LearnRoute: typeof LearnRoute
+  PrisonersDilemmaRoute: typeof PrisonersDilemmaRoute
+  PrisonersNetwrokRoute: typeof PrisonersNetwrokRoute
+  RPScLSpRoute: typeof RPScLSpRoute
+  StagHuntRoute: typeof StagHuntRoute
+  TheFairFeastRoute: typeof TheFairFeastRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  ChallengeRoute: ChallengeRoute,
+  CommunityChestRoute: CommunityChestRoute,
   GamesRoute: GamesRoute,
+  LearnRoute: LearnRoute,
+  PrisonersDilemmaRoute: PrisonersDilemmaRoute,
+  PrisonersNetwrokRoute: PrisonersNetwrokRoute,
+  RPScLSpRoute: RPScLSpRoute,
+  StagHuntRoute: StagHuntRoute,
+  TheFairFeastRoute: TheFairFeastRoute,
 }
 
 export const routeTree = rootRoute
@@ -117,7 +303,15 @@ export const routeTree = rootRoute
       "children": [
         "/",
         "/about",
-        "/games"
+        "/challenge",
+        "/community-chest",
+        "/games",
+        "/learn",
+        "/prisoners-dilemma",
+        "/prisoners-netwrok",
+        "/r-p-sc-l-sp",
+        "/stag-hunt",
+        "/the-fair-feast"
       ]
     },
     "/": {
@@ -126,8 +320,32 @@ export const routeTree = rootRoute
     "/about": {
       "filePath": "about.tsx"
     },
+    "/challenge": {
+      "filePath": "challenge.tsx"
+    },
+    "/community-chest": {
+      "filePath": "community-chest.tsx"
+    },
     "/games": {
       "filePath": "games.tsx"
+    },
+    "/learn": {
+      "filePath": "learn.tsx"
+    },
+    "/prisoners-dilemma": {
+      "filePath": "prisoners-dilemma.tsx"
+    },
+    "/prisoners-netwrok": {
+      "filePath": "prisoners-netwrok.tsx"
+    },
+    "/r-p-sc-l-sp": {
+      "filePath": "r-p-sc-l-sp.tsx"
+    },
+    "/stag-hunt": {
+      "filePath": "stag-hunt.tsx"
+    },
+    "/the-fair-feast": {
+      "filePath": "the-fair-feast.tsx"
     }
   }
 }

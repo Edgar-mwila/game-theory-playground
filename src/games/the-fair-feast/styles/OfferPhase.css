@@ -1,0 +1,27 @@
+.offer-phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.offer-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.offer-control label {
+  font-weight: bold;
+}
+
+.offer-control input[type="range"] {
+  width: 200px;
+}
+
+.offer-control select {
+  padding: 5px;
+  font-size: 1rem;
+}
+

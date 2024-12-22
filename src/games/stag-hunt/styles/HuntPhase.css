@@ -1,0 +1,33 @@
+.hunt-phase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.target-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-target {
+  padding: 10px 20px;
+  border: 2px solid var(--primary);
+  background-color: white;
+  color: var(--primary);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-target:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-target.selected {
+  background-color: var(--primary);
+  color: white;
+}
+

@@ -1,0 +1,73 @@
+.game-board {
+  margin-bottom: 30px;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.community-chest {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--success);
+}
+
+.multiplier {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--info);
+}
+
+.event-type {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.players-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--background);
+}
+
+.player.human {
+  background-color: var(--info);
+  color: white;
+}
+
+.player.cooperative {
+  background-color: var(--success);
+  color: white;
+}
+
+.player.freerider {
+  background-color: var(--warning);
+  color: white;
+}
+
+.player.conditional {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.player-icon {
+  font-size: 2rem;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+

@@ -1,0 +1,97 @@
+.game-board {
+  margin-bottom: 30px;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.environment {
+  font-size: 1.2rem;
+}
+
+.time-left {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.time-left.urgent {
+  color: var(--danger);
+}
+
+.prey-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.prey-item {
+  background-color: var(--background);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 120px;
+}
+
+.prey-emoji {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.prey-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.players-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--background);
+}
+
+.player.human {
+  background-color: var(--info);
+  color: white;
+}
+
+.player.cooperative {
+  background-color: var(--success);
+  color: white;
+}
+
+.player.selfish {
+  background-color: var(--warning);
+  color: white;
+}
+
+.player.adaptive {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.player-icon {
+  font-size: 2rem;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+

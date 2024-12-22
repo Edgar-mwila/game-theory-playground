@@ -1,0 +1,46 @@
+.game-board {
+  margin-bottom: 30px;
+}
+
+.pizza-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pizza-slice {
+  font-size: 2rem;
+  margin: 2px;
+}
+
+.players-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.player.current {
+  background-color: var(--primary);
+  color: white;
+}
+
+.player-icon {
+  font-size: 2rem;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+

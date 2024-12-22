@@ -1,0 +1,21 @@
+.game-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.move-button {
+  font-size: 2rem;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: var(--background);
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.move-button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
