@@ -15,7 +15,7 @@
 .btn-target {
   padding: 10px 20px;
   border: 2px solid var(--primary);
-  background-color: white;
+  background-color: 26355D;
   color: var(--primary);
   font-weight: bold;
   transition: all 0.3s ease;
@@ -23,11 +23,11 @@
 
 .btn-target:hover {
   background-color: var(--primary);
-  color: white;
+  color: 26355D;
 }
 
 .btn-target.selected {
   background-color: var(--primary);
-  color: white;
+  color: 26355D;
 }
 

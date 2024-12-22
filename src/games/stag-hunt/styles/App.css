@@ -1,12 +1,12 @@
 :root {
-  --primary: #2c3e50;
-  --secondary: #34495e;
-  --background: #ecf0f1;
-  --text: #2c3e50;
-  --success: #27ae60;
-  --danger: #c0392b;
-  --warning: #f39c12;
-  --info: #3498db;
+  --primary: #8e44ad; /* A rich 26355D to complement the gradient */
+  --secondary: #1abc9c; /* A vibrant teal for contrast */
+  --background: #26355D; /* Deep navy for better compatibility with gradient */
+  --text: #eaeaea; /* Light gray for readability against dark backgrounds */
+  --success: #2ecc71; /* Bright green for positive feedback */
+  --danger: #e74c3c; /* Vivid red for error states */
+  --warning: #f1c40f; /* Golden yellow for warnings */
+  --info: #6c5ce7; /* Soft lavender for informational highlights */
 }
 
 body {
@@ -62,31 +62,31 @@ button:disabled {
 
 .btn-primary {
   background-color: var(--primary);
-  color: white;
+  color: 26355D;
 }
 
 .btn-secondary {
   background-color: var(--secondary);
-  color: white;
+  color: 26355D;
 }
 
 .btn-success {
   background-color: var(--success);
-  color: white;
+  color: 26355D;
 }
 
 .btn-danger {
   background-color: var(--danger);
-  color: white;
+  color: 26355D;
 }
 
 .btn-warning {
   background-color: var(--warning);
-  color: white;
+  color: 26355D;
 }
 
 .btn-info {
   background-color: var(--info);
-  color: white;
+  color: 26355D;
 }
 

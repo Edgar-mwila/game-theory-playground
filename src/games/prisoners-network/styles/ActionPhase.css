@@ -23,11 +23,11 @@
 
 .btn-action:first-child {
   background-color: var(--success);
-  color: white;
+  color: 26355D;
 }
 
 .btn-action:last-child {
   background-color: var(--danger);
-  color: white;
+  color: 26355D;
 }
 

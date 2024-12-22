@@ -14,7 +14,7 @@ import { Route as rootRoute } from './routes/__root'
 import { Route as TheFairFeastImport } from './routes/the-fair-feast'
 import { Route as StagHuntImport } from './routes/stag-hunt'
 import { Route as RPScLSpImport } from './routes/r-p-sc-l-sp'
-import { Route as PrisonersNetwrokImport } from './routes/prisoners-netwrok'
+import { Route as PrisonersNetworkImport } from './routes/prisoners-network'
 import { Route as PrisonersDilemmaImport } from './routes/prisoners-dilemma'
 import { Route as LearnImport } from './routes/learn'
 import { Route as GamesImport } from './routes/games'
@@ -43,9 +43,9 @@ const RPScLSpRoute = RPScLSpImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const PrisonersNetwrokRoute = PrisonersNetwrokImport.update({
-  id: '/prisoners-netwrok',
-  path: '/prisoners-netwrok',
+const PrisonersNetworkRoute = PrisonersNetworkImport.update({
+  id: '/prisoners-network',
+  path: '/prisoners-network',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -144,11 +144,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PrisonersDilemmaImport
       parentRoute: typeof rootRoute
     }
-    '/prisoners-netwrok': {
-      id: '/prisoners-netwrok'
-      path: '/prisoners-netwrok'
-      fullPath: '/prisoners-netwrok'
-      preLoaderRoute: typeof PrisonersNetwrokImport
+    '/prisoners-network': {
+      id: '/prisoners-network'
+      path: '/prisoners-network'
+      fullPath: '/prisoners-network'
+      preLoaderRoute: typeof PrisonersNetworkImport
       parentRoute: typeof rootRoute
     }
     '/r-p-sc-l-sp': {
@@ -185,7 +185,7 @@ export interface FileRoutesByFullPath {
   '/games': typeof GamesRoute
   '/learn': typeof LearnRoute
   '/prisoners-dilemma': typeof PrisonersDilemmaRoute
-  '/prisoners-netwrok': typeof PrisonersNetwrokRoute
+  '/prisoners-network': typeof PrisonersNetworkRoute
   '/r-p-sc-l-sp': typeof RPScLSpRoute
   '/stag-hunt': typeof StagHuntRoute
   '/the-fair-feast': typeof TheFairFeastRoute
@@ -199,7 +199,7 @@ export interface FileRoutesByTo {
   '/games': typeof GamesRoute
   '/learn': typeof LearnRoute
   '/prisoners-dilemma': typeof PrisonersDilemmaRoute
-  '/prisoners-netwrok': typeof PrisonersNetwrokRoute
+  '/prisoners-network': typeof PrisonersNetworkRoute
   '/r-p-sc-l-sp': typeof RPScLSpRoute
   '/stag-hunt': typeof StagHuntRoute
   '/the-fair-feast': typeof TheFairFeastRoute
@@ -214,7 +214,7 @@ export interface FileRoutesById {
   '/games': typeof GamesRoute
   '/learn': typeof LearnRoute
   '/prisoners-dilemma': typeof PrisonersDilemmaRoute
-  '/prisoners-netwrok': typeof PrisonersNetwrokRoute
+  '/prisoners-network': typeof PrisonersNetworkRoute
   '/r-p-sc-l-sp': typeof RPScLSpRoute
   '/stag-hunt': typeof StagHuntRoute
   '/the-fair-feast': typeof TheFairFeastRoute
@@ -230,7 +230,7 @@ export interface FileRouteTypes {
     | '/games'
     | '/learn'
     | '/prisoners-dilemma'
-    | '/prisoners-netwrok'
+    | '/prisoners-network'
     | '/r-p-sc-l-sp'
     | '/stag-hunt'
     | '/the-fair-feast'
@@ -243,7 +243,7 @@ export interface FileRouteTypes {
     | '/games'
     | '/learn'
     | '/prisoners-dilemma'
-    | '/prisoners-netwrok'
+    | '/prisoners-network'
     | '/r-p-sc-l-sp'
     | '/stag-hunt'
     | '/the-fair-feast'
@@ -256,7 +256,7 @@ export interface FileRouteTypes {
     | '/games'
     | '/learn'
     | '/prisoners-dilemma'
-    | '/prisoners-netwrok'
+    | '/prisoners-network'
     | '/r-p-sc-l-sp'
     | '/stag-hunt'
     | '/the-fair-feast'
@@ -271,7 +271,7 @@ export interface RootRouteChildren {
   GamesRoute: typeof GamesRoute
   LearnRoute: typeof LearnRoute
   PrisonersDilemmaRoute: typeof PrisonersDilemmaRoute
-  PrisonersNetwrokRoute: typeof PrisonersNetwrokRoute
+  PrisonersNetworkRoute: typeof PrisonersNetworkRoute
   RPScLSpRoute: typeof RPScLSpRoute
   StagHuntRoute: typeof StagHuntRoute
   TheFairFeastRoute: typeof TheFairFeastRoute
@@ -285,7 +285,7 @@ const rootRouteChildren: RootRouteChildren = {
   GamesRoute: GamesRoute,
   LearnRoute: LearnRoute,
   PrisonersDilemmaRoute: PrisonersDilemmaRoute,
-  PrisonersNetwrokRoute: PrisonersNetwrokRoute,
+  PrisonersNetworkRoute: PrisonersNetworkRoute,
   RPScLSpRoute: RPScLSpRoute,
   StagHuntRoute: StagHuntRoute,
   TheFairFeastRoute: TheFairFeastRoute,
@@ -308,7 +308,7 @@ export const routeTree = rootRoute
         "/games",
         "/learn",
         "/prisoners-dilemma",
-        "/prisoners-netwrok",
+        "/prisoners-network",
         "/r-p-sc-l-sp",
         "/stag-hunt",
         "/the-fair-feast"
@@ -335,8 +335,8 @@ export const routeTree = rootRoute
     "/prisoners-dilemma": {
       "filePath": "prisoners-dilemma.tsx"
     },
-    "/prisoners-netwrok": {
-      "filePath": "prisoners-netwrok.tsx"
+    "/prisoners-network": {
+      "filePath": "prisoners-network.tsx"
     },
     "/r-p-sc-l-sp": {
       "filePath": "r-p-sc-l-sp.tsx"

@@ -44,22 +44,22 @@
 
 .player.human {
   background-color: var(--info);
-  color: white;
+  color: 26355D;
 }
 
 .player.cooperative {
   background-color: var(--success);
-  color: white;
+  color: 26355D;
 }
 
 .player.freerider {
   background-color: var(--warning);
-  color: white;
+  color: 26355D;
 }
 
 .player.conditional {
   background-color: var(--secondary);
-  color: white;
+  color: 26355D;
 }
 
 .player-icon {

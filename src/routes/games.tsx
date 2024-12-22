@@ -36,17 +36,6 @@ const games = [
     icon: <FaUsers className="text-3xl" />
   },
   {
-    title: "Resource Allocation Dilemma",
-    description: "Step into the shoes of a negotiator in this dynamic bargaining game. Balance competing interests and find optimal solutions across multiple scenarios. Perfect for understanding Nash bargaining and cooperative game theory.",
-    image: "/placeholder.svg?height=200&width=300",
-    link: "/resource-allocation",
-    difficulty: "Hard",
-    players: "2-4",
-    duration: "20-30 min",
-    concepts: ["Nash Bargaining", "Pareto Efficiency", "Fair Division"],
-    icon: <FaHandshake className="text-3xl" />
-  },
-  {
     title: "Prisoner's Dilemma",
     description: "Experience the most famous game theory scenario in this beautifully animated simulation. Cooperate or defect in multiple rounds against different AI strategies. Learn about the emergence of cooperation and the power of reciprocity.",
     image: "/placeholder.svg?height=200&width=300",

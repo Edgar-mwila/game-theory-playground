@@ -36,28 +36,28 @@
   gap: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: white;
+  background-color: 26355D;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .prisoner.human {
   background-color: var(--info);
-  color: white;
+  color: 26355D;
 }
 
 .prisoner.loyal {
   background-color: var(--success);
-  color: white;
+  color: 26355D;
 }
 
 .prisoner.selfish {
   background-color: var(--warning);
-  color: white;
+  color: 26355D;
 }
 
 .prisoner.adaptive {
   background-color: var(--secondary);
-  color: white;
+  color: 26355D;
 }
 
 .prisoner-icon {
