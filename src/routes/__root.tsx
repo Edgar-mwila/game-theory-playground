@@ -31,6 +31,7 @@ const RootComponent = () => {
               <NavLink to="/">Home</NavLink>
               <NavLink to="/games">Games</NavLink>
               <NavLink to="/learn">Learn</NavLink>
+              <NavLink to="/challenge">Challenge</NavLink>
               <NavLink to="/about">About</NavLink>
             </div>
           </div>

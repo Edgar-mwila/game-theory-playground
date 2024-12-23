@@ -51,7 +51,12 @@ const ScenarioSection: React.FC<ScenarioSectionProps> = ({ scenario, onNext }) =
       )}
       
       {showFeedback && (
-        <button onClick={onNext} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+        <button onClick={() => {
+            setSelectedChoice(null); 
+            setShowFeedback(false); 
+            onNext();
+          }} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+        >
           Next Scenario
         </button>
       )}
