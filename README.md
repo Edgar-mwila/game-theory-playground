@@ -54,7 +54,7 @@ Start the development server:
 
 bun run dev
 
-Open your browser and navigate to http://localhost:3000 (or the port specified in the terminal).
+Open your browser and navigate to http://localhost:5173.
 
 Additional Commands
 
