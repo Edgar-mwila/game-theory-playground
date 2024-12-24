@@ -20,27 +20,24 @@ Open your terminal or command prompt.
 
 Clone the repository:
 
-git clone <repository-url>
+first o to or create a folder in which you want the project folder to be.
+then open the cmd or terminal in vs code and run this command;
+git clone https://github.com/Edgar-mwila/game-theory-playground.git
+then run this command; cd game-theory-playground
+then run code .
 
-Replace <repository-url> with the URL of the repository.
-
-Navigate into the project folder:
-
-cd <project-folder>
 
 Step 2: Install Bun
 
 Install Bun globally on your system:
 
-curl -fsSL https://bun.sh/install | bash
+search install bun on windows and click the first link. then open powershell in admin mode an run the command there.
 
-Restart your terminal to ensure the Bun command is available.
+Restart your powershell to ensure the Bun command is available.
 
 Verify the installation by checking the version:
 
 bun --version
-
-Note for Windows Users: Ensure you have WSL (Windows Subsystem for Linux) installed and configured to use the above command. Alternatively, follow the Windows-specific Bun installation guide if needed.
 
 Step 3: Install Dependencies
 
